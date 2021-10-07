@@ -1,0 +1,57 @@
+{
+    "name": "swinney-vsphere",
+    "description": "",
+    "connection_parameters": [
+      {
+        "name": "vsphere_user",
+        "value": "administrator@home.swinney.io",
+        "secured": "false",
+        "type": "string",
+        "description": "The user to connect to vCenter",
+        "required": "true",
+        "label": "vCenter User"
+      },
+      {
+        "name": "vsphere_password",
+        "value": "*****",
+        "secured": "true",
+        "type": "password",
+        "description": "The password to connect to vCenter",
+        "required": "true",
+        "label": "vCenter Password"
+      },
+      {
+        "name": "vsphere_server",
+        "value": "vcenter.swinney.io",
+        "secured": "false",
+        "type": "string",
+        "description": "The vCenter server IP or hostname",
+        "required": "true",
+        "label": "vCenter Server"
+      }
+    ],
+    "configuration_parameters": [],
+    "message": "VSphere Cloud Connection parameters failed validation.",
+    "encrypted": true,
+    "type": "cloud",
+    "providerId": "6152cc21aa17bf001936c619",
+    "additional_Parameters": [
+      {
+        "plugin": "plugin-terraform",
+        "supported_api_types": [
+          "stack",
+          "iaas"
+        ],
+        "supported_template_types": [
+          {
+            "template_type": "Terraform",
+            "template_formats": [
+              "JSON",
+              "HCL"
+            ]
+          }
+        ],
+        "configuration_parameters": []
+      }
+    ]
+  }

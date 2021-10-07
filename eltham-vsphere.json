@@ -1,0 +1,44 @@
+  {
+      "name": "eltham-vsphere",
+      "description": "My VMware vSphere Connection",
+      "connection_parameters": [
+          {
+              "name": "vsphere_user",
+              "value": "administrator@vsphere.local",
+              "secured": "false"
+          },
+          {
+              "name": "vsphere_password",
+              "value": "HomeLab23!",
+              "secured": "true"
+          },
+          {
+              "name": "vsphere_server",
+              "value": "home.nmerrett.net",
+              "secured": "false"
+          }
+      ],
+      "configuration_parameters" :[
+
+      ],
+      "additional_Parameters": [
+        {
+            "plugin": "plugin-terraform",
+            "supported_api_types": [
+              "stack",
+              "iaas"
+            ],
+            "supported_template_types": [
+              {
+                "template_type": "Terraform",
+                "template_formats": [
+                  "JSON",
+                  "HCL"
+                ]
+              }
+            ],
+            "configuration_parameters": [
+            ]
+       }
+    ]
+  } 
