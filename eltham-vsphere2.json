@@ -1,20 +1,20 @@
   {
-      "name": "eltham-vsphere",
+      "name": "eltham-vsphere2",
       "description": "My VMware vSphere Connection",
       "connection_parameters": [
           {
               "name": "vsphere_user",
-              "value": "administrator@vsphere.local",
+              "value": "{{ secrets.username }}",
               "secured": "false"
           },
           {
               "name": "vsphere_password",
-              "value": "HomeLab23!",
+              "value": "{{ secrets.password }}",
               "secured": "true"
           },
           {
               "name": "vsphere_server",
-              "value": "home.nmerrett.net",
+              "value": "{{ secrets.vcenter }}",
               "secured": "false"
           }
       ],
