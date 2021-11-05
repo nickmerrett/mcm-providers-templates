@@ -1,5 +1,5 @@
 {
-  "name": "AWSTestConnection",
+  "name": "aws-sydney",
   "description": "My AWS Test Connection",
   "connection_parameters": [
     {
@@ -11,7 +11,7 @@
       "label": "Access Key ID",
       "default": null,
       "options": null,
-      "value": "1234"
+      "value": "{{ secrets.access_id }}"
     },
     {
       "name": "aws_secret_key",
@@ -22,7 +22,7 @@
       "label": "Secret Access Key",
       "default": null,
       "options": null,
-      "value": "5678"
+      "value": "{{ secrets.secret_key }}"
     },
     {
       "name": "aws_default_region",
@@ -35,8 +35,7 @@
       "options": [
         {
           "label": "US East (Northern Virginia)",
-          "value": "us-east-1",
-          "default": "true"
+          "value": "us-east-1"
         },
         {
           "label": "US East (Ohio) Region",
@@ -60,7 +59,8 @@
         },
         {
           "label": "Asia Pacific (Sydney) Region",
-          "value": "ap-southeast-2"
+          "value": "ap-southeast-2",
+          "default": "true"
         },
         {
           "label": "Asia Pacific (Tokyo) Region",
@@ -87,7 +87,7 @@
     }
   ],
   "configuration_parameters": [],
-  "providerId": "6152cc21aa17bf001936c618",
+  "providerId": "6171f3f93d4ce900193a20ae",
   "additional_Parameters": [
     {
       "plugin": "plugin-terraform",

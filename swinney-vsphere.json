@@ -34,7 +34,7 @@
     "message": "VSphere Cloud Connection parameters failed validation.",
     "encrypted": true,
     "type": "cloud",
-    "providerId": "6152cc21aa17bf001936c619",
+    "providerId": "6171f3f93d4ce900193a20af",
     "additional_Parameters": [
       {
         "plugin": "plugin-terraform",
